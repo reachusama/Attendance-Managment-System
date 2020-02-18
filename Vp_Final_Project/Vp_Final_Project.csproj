@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CCF71032-E593-4901-A47F-12A0E4518508}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Vp_Final_Project</RootNamespace>
+    <AssemblyName>Vp_Final_Project</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI, Version=1.6.0.0, Culture=neutral, PublicKeyToken=537479e8cf7071a7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=8.0.18.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForm.Designer.cs">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MySql.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StudentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentForm.Designer.cs">
+      <DependentUpon>StudentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubAdminForm\AdminAddCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubAdminForm\AdminAddCourse.Designer.cs">
+      <DependentUpon>AdminAddCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubAdminForm\AdminAddStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubAdminForm\AdminAddStudent.Designer.cs">
+      <DependentUpon>AdminAddStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubAdminForm\AdminAddTeacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubAdminForm\AdminAddTeacher.Designer.cs">
+      <DependentUpon>AdminAddTeacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubAdminForm\AdminProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubAdminForm\AdminProfile.Designer.cs">
+      <DependentUpon>AdminProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubAdminForm\AdminSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubAdminForm\AdminSearch.Designer.cs">
+      <DependentUpon>AdminSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubAdminForm\AdminSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubAdminForm\AdminSettings.Designer.cs">
+      <DependentUpon>AdminSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubStudentForm\StudentSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubStudentForm\StudentSettings.Designer.cs">
+      <DependentUpon>StudentSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubStudentForm\StudentEnrollCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubStudentForm\StudentEnrollCourse.Designer.cs">
+      <DependentUpon>StudentEnrollCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubStudentForm\StudentProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubStudentForm\StudentProfile.Designer.cs">
+      <DependentUpon>StudentProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubStudentForm\StudentViewAttendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubStudentForm\StudentViewAttendance.Designer.cs">
+      <DependentUpon>StudentViewAttendance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubStudentForm\StudentViewCourses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubStudentForm\StudentViewCourses.Designer.cs">
+      <DependentUpon>StudentViewCourses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubTeacherForm\TeacherEditAttendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubTeacherForm\TeacherEditAttendance.Designer.cs">
+      <DependentUpon>TeacherEditAttendance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubTeacherForm\TeacherMarkAttendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubTeacherForm\TeacherMarkAttendance.Designer.cs">
+      <DependentUpon>TeacherMarkAttendance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubTeacherForm\TeacherProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubTeacherForm\TeacherProfile.Designer.cs">
+      <DependentUpon>TeacherProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubTeacherForm\TeacherSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubTeacherForm\TeacherSettings.Designer.cs">
+      <DependentUpon>TeacherSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubTeacherForm\TeacherViewAttendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubTeacherForm\TeacherViewAttendance.Designer.cs">
+      <DependentUpon>TeacherViewAttendance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubTeacherForm\TeacherViewStudents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubTeacherForm\TeacherViewStudents.Designer.cs">
+      <DependentUpon>TeacherViewStudents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherForm.Designer.cs">
+      <DependentUpon>TeacherForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminForm.resx">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="StudentForm.resx">
+      <DependentUpon>StudentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubAdminForm\AdminAddCourse.resx">
+      <DependentUpon>AdminAddCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubAdminForm\AdminAddStudent.resx">
+      <DependentUpon>AdminAddStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubAdminForm\AdminAddTeacher.resx">
+      <DependentUpon>AdminAddTeacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubAdminForm\AdminProfile.resx">
+      <DependentUpon>AdminProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubAdminForm\AdminSearch.resx">
+      <DependentUpon>AdminSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubAdminForm\AdminSettings.resx">
+      <DependentUpon>AdminSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubStudentForm\StudentEnrollCourse.resx">
+      <DependentUpon>StudentEnrollCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubStudentForm\StudentProfile.resx">
+      <DependentUpon>StudentProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubStudentForm\StudentSettings.resx">
+      <DependentUpon>StudentSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubStudentForm\StudentViewAttendance.resx">
+      <DependentUpon>StudentViewAttendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubStudentForm\StudentViewCourses.resx">
+      <DependentUpon>StudentViewCourses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubTeacherForm\TeacherEditAttendance.resx">
+      <DependentUpon>TeacherEditAttendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubTeacherForm\TeacherMarkAttendance.resx">
+      <DependentUpon>TeacherMarkAttendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubTeacherForm\TeacherProfile.resx">
+      <DependentUpon>TeacherProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubTeacherForm\TeacherSettings.resx">
+      <DependentUpon>TeacherSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubTeacherForm\TeacherViewAttendance.resx">
+      <DependentUpon>TeacherViewAttendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubTeacherForm\TeacherViewStudents.resx">
+      <DependentUpon>TeacherViewStudents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherForm.resx">
+      <DependentUpon>TeacherForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
